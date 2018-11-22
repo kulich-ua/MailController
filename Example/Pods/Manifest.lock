@@ -1,0 +1,16 @@
+PODS:
+  - MailController (0.1.0)
+
+DEPENDENCIES:
+  - MailController (from `../`)
+
+EXTERNAL SOURCES:
+  MailController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MailController: e212fe0db374b2ad62c3bd7aa96371541847c90e
+
+PODFILE CHECKSUM: e7bf7c6febfda923d91e9207991969c1e36dde9c
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,22 @@
+{
+  "name": "MailController",
+  "version": "0.1.0",
+  "summary": "A short description of MailController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Volodymyr Kolibaba/MailController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Volodymyr Kolibaba": "kulich.ua@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Volodymyr Kolibaba/MailController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MailController/**/*.{swift}"
+}

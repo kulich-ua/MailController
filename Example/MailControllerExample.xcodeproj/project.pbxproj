@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10BCC283E42EA346C35CC27F /* libPods-MailControllerExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C68AC94201AC03FEF41BD6 /* libPods-MailControllerExample.a */; };
 		966873C321A70AF9008A334E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966873C221A70AF9008A334E /* AppDelegate.swift */; };
 		966873C521A70AF9008A334E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966873C421A70AF9008A334E /* ViewController.swift */; };
 		966873C821A70AF9008A334E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966873C621A70AF9008A334E /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BB36923B78974ABE1609896 /* Pods-MailControllerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailControllerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MailControllerExample/Pods-MailControllerExample.release.xcconfig"; sourceTree = "<group>"; };
+		51C68AC94201AC03FEF41BD6 /* libPods-MailControllerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MailControllerExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B300C61DF710740A40E417 /* Pods-MailControllerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailControllerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MailControllerExample/Pods-MailControllerExample.debug.xcconfig"; sourceTree = "<group>"; };
 		966873BF21A70AF9008A334E /* MailControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		966873C221A70AF9008A334E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		966873C421A70AF9008A334E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BCC283E42EA346C35CC27F /* libPods-MailControllerExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				966873C121A70AF9008A334E /* MailControllerExample */,
 				966873C021A70AF9008A334E /* Products */,
+				B3A584EEBC21973931D6BE18 /* Pods */,
+				DBC75A3B9919A907AEBBEEED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = MailControllerExample;
 			sourceTree = "<group>";
 		};
+		B3A584EEBC21973931D6BE18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87B300C61DF710740A40E417 /* Pods-MailControllerExample.debug.xcconfig */,
+				3BB36923B78974ABE1609896 /* Pods-MailControllerExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DBC75A3B9919A907AEBBEEED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51C68AC94201AC03FEF41BD6 /* libPods-MailControllerExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 966873D121A70AFA008A334E /* Build configuration list for PBXNativeTarget "MailControllerExample" */;
 			buildPhases = (
+				FCD4F9B9F2706C52D82ACF86 /* [CP] Check Pods Manifest.lock */,
 				966873BB21A70AF9008A334E /* Sources */,
 				966873BC21A70AF9008A334E /* Frameworks */,
 				966873BD21A70AF9008A334E /* Resources */,
@@ -129,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FCD4F9B9F2706C52D82ACF86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MailControllerExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		966873BB21A70AF9008A334E /* Sources */ = {
@@ -280,6 +330,7 @@
 		};
 		966873D221A70AFA008A334E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87B300C61DF710740A40E417 /* Pods-MailControllerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +349,7 @@
 		};
 		966873D321A70AFA008A334E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB36923B78974ABE1609896 /* Pods-MailControllerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
