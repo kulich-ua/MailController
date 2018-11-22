@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MailController: e212fe0db374b2ad62c3bd7aa96371541847c90e
+  MailController: b121814f82c830a0b03c35ab7fac64ab5a418f98
 
 PODFILE CHECKSUM: e7bf7c6febfda923d91e9207991969c1e36dde9c
 
