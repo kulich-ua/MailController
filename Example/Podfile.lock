@@ -2,15 +2,15 @@ PODS:
   - MailController (0.1.0)
 
 DEPENDENCIES:
-  - MailController (from `../`)
+  - MailController (~> 0.1.0)
 
-EXTERNAL SOURCES:
-  MailController:
-    :path: "../"
+SPEC REPOS:
+  https://github.com/Kulich-ua/PodSpecs.git:
+    - MailController
 
 SPEC CHECKSUMS:
   MailController: b121814f82c830a0b03c35ab7fac64ab5a418f98
 
-PODFILE CHECKSUM: e7bf7c6febfda923d91e9207991969c1e36dde9c
+PODFILE CHECKSUM: d6f0e67b2ade48d96be55ce7ac01acc36d08c271
 
 COCOAPODS: 1.5.3

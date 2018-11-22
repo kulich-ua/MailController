@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		3623859CDD3169765BA035EF4E9E6F2B /* Pods-MailControllerExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A739528E9E672E977B05B11E102FA975 /* Pods-MailControllerExample-dummy.m */; };
 		41F59E474629E352DE6B1953B095A1DF /* Pods-MailControllerExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87061AC00E33A8558A8921D6C01B98A3 /* Pods-MailControllerExample-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		508CD3CA573362CC78CCC5BFA683D425 /* MailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0A637EC63E0BE83EF1F7E7D55F734A /* MailController.swift */; };
-		6028B1AE4E28183F4C71AAF06384794C /* MailController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EEEE595458E3FCC945AF07B2374F16 /* MailController-dummy.m */; };
-		7956434D85CA861C83A2E4F5456A74D5 /* MailControllerDefaultResultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B540FF33AD9E44FD24463BCC3359EA /* MailControllerDefaultResultHandler.swift */; };
-		BBC6C40DAE21C3F3531EC21158B5F62E /* MailController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 198E8B14A92804F5325B774EAE547D6F /* MailController-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		508CD3CA573362CC78CCC5BFA683D425 /* MailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6198F6BC54EDD7A6A485E79A36DAF /* MailController.swift */; };
+		6028B1AE4E28183F4C71AAF06384794C /* MailController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3946C000657CD43D10E7579E36B545 /* MailController-dummy.m */; };
+		7956434D85CA861C83A2E4F5456A74D5 /* MailControllerDefaultResultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081CD48653CF11C8F52A4C64A2CF2798 /* MailControllerDefaultResultHandler.swift */; };
+		BBC6C40DAE21C3F3531EC21158B5F62E /* MailController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA0A0D8C9BA94AB3E36A71553DB1035 /* MailController-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,27 +26,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		081CD48653CF11C8F52A4C64A2CF2798 /* MailControllerDefaultResultHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MailControllerDefaultResultHandler.swift; path = MailController/MailControllerDefaultResultHandler.swift; sourceTree = "<group>"; };
 		094B7E0BFFDA8634D7E5CC342604E4DC /* Pods-MailControllerExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MailControllerExample-resources.sh"; sourceTree = "<group>"; };
-		15EEEE595458E3FCC945AF07B2374F16 /* MailController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MailController-dummy.m"; sourceTree = "<group>"; };
-		198E8B14A92804F5325B774EAE547D6F /* MailController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MailController-umbrella.h"; path = "../../Headers/Public/MailController/MailController-umbrella.h"; sourceTree = "<group>"; };
-		27ADC22E2C2DAD2030EE3C9F11F00F0C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		19E6198F6BC54EDD7A6A485E79A36DAF /* MailController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MailController.swift; path = MailController/MailController.swift; sourceTree = "<group>"; };
 		2C51A07141E391344CBEC37C07A64D02 /* Pods-MailControllerExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MailControllerExample.modulemap"; sourceTree = "<group>"; };
-		41F9973B2F4EEF964C853DB22A8ECC48 /* MailController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = MailController.modulemap; path = ../../Headers/Public/MailController/MailController.modulemap; sourceTree = "<group>"; };
+		380D17FE0F90E2E4BBE92219D37FFA39 /* MailController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MailController.xcconfig; sourceTree = "<group>"; };
 		47E7B55C71FF735658972F68297277E9 /* Pods-MailControllerExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MailControllerExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		4C6F027A163F2BD056BC592A20A8B762 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		51F331076F6C8C94C8C2E0916FCF5BD9 /* Pods-MailControllerExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MailControllerExample-frameworks.sh"; sourceTree = "<group>"; };
-		57AD536B2B677F9577D7D59A270796D4 /* MailController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MailController.xcconfig; sourceTree = "<group>"; };
 		5C9EE9FF5A1432308E416EB04FF84B8E /* Pods-MailControllerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MailControllerExample.release.xcconfig"; sourceTree = "<group>"; };
-		65B540FF33AD9E44FD24463BCC3359EA /* MailControllerDefaultResultHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MailControllerDefaultResultHandler.swift; path = MailController/MailControllerDefaultResultHandler.swift; sourceTree = "<group>"; };
-		68C7E55D88B8B628B8A33FDF85245551 /* MailController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MailController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		848E3941944CD0EA8B0420AD8F385DDA /* Pods-MailControllerExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MailControllerExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		87061AC00E33A8558A8921D6C01B98A3 /* Pods-MailControllerExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MailControllerExample-umbrella.h"; sourceTree = "<group>"; };
-		8B0A637EC63E0BE83EF1F7E7D55F734A /* MailController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MailController.swift; path = MailController/MailController.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93FBAADA4C792F6AD33B4612EC390C6A /* MailController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MailController-prefix.pch"; sourceTree = "<group>"; };
 		9A72EFA049C29B8F0FA436F498445E16 /* libMailController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMailController.a; path = libMailController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA0A0D8C9BA94AB3E36A71553DB1035 /* MailController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MailController-umbrella.h"; path = "../../Headers/Public/MailController/MailController-umbrella.h"; sourceTree = "<group>"; };
 		A669F970964927F4E14F56304677DE0E /* libPods-MailControllerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MailControllerExample.a"; path = "libPods-MailControllerExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A739528E9E672E977B05B11E102FA975 /* Pods-MailControllerExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MailControllerExample-dummy.m"; sourceTree = "<group>"; };
-		AA9E19FC1A153A0A95D1CDD9C80F4785 /* MailController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MailController-prefix.pch"; sourceTree = "<group>"; };
+		B4CC78C3C8A1353F90FDD7E98AC4EB62 /* MailController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = MailController.modulemap; path = ../../Headers/Public/MailController/MailController.modulemap; sourceTree = "<group>"; };
+		EA3946C000657CD43D10E7579E36B545 /* MailController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MailController-dummy.m"; sourceTree = "<group>"; };
 		F3892A2963AF2FF6347224FCA4BE48FA /* Pods-MailControllerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MailControllerExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,17 +72,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		27EE9C673AB81FE9450A4339CA3802AB /* Support Files */ = {
+		13C2ABD273900C3F86710B789402B964 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				41F9973B2F4EEF964C853DB22A8ECC48 /* MailController.modulemap */,
-				57AD536B2B677F9577D7D59A270796D4 /* MailController.xcconfig */,
-				15EEEE595458E3FCC945AF07B2374F16 /* MailController-dummy.m */,
-				AA9E19FC1A153A0A95D1CDD9C80F4785 /* MailController-prefix.pch */,
-				198E8B14A92804F5325B774EAE547D6F /* MailController-umbrella.h */,
+				B4CC78C3C8A1353F90FDD7E98AC4EB62 /* MailController.modulemap */,
+				380D17FE0F90E2E4BBE92219D37FFA39 /* MailController.xcconfig */,
+				EA3946C000657CD43D10E7579E36B545 /* MailController-dummy.m */,
+				93FBAADA4C792F6AD33B4612EC390C6A /* MailController-prefix.pch */,
+				9CA0A0D8C9BA94AB3E36A71553DB1035 /* MailController-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MailController";
+			path = "../Target Support Files/MailController";
+			sourceTree = "<group>";
+		};
+		2936EF2692C7E45CFDE5ACBC77892FFD /* MailController */ = {
+			isa = PBXGroup;
+			children = (
+				19E6198F6BC54EDD7A6A485E79A36DAF /* MailController.swift */,
+				081CD48653CF11C8F52A4C64A2CF2798 /* MailControllerDefaultResultHandler.swift */,
+				13C2ABD273900C3F86710B789402B964 /* Support Files */,
+			);
+			name = MailController;
+			path = MailController;
 			sourceTree = "<group>";
 		};
 		52559480CFCA54A957AC57DBECA79360 /* Products */ = {
@@ -97,22 +105,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		52C5D7334325740318F402680FB48E1E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				27ADC22E2C2DAD2030EE3C9F11F00F0C /* LICENSE */,
-				68C7E55D88B8B628B8A33FDF85245551 /* MailController.podspec */,
-				4C6F027A163F2BD056BC592A20A8B762 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				D1523A676540F28C0ACFBAD703E6FF8C /* Development Pods */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				D1F14AD57A6246DD7D4B7FCA0F16EA06 /* Pods */,
 				52559480CFCA54A957AC57DBECA79360 /* Products */,
 				E0EE8B1FAA04AA22D446E2C9FC5B6395 /* Targets Support Files */,
 			);
@@ -135,24 +133,12 @@
 			path = "Target Support Files/Pods-MailControllerExample";
 			sourceTree = "<group>";
 		};
-		BBC5453087D52AD3BF468869AFED243C /* MailController */ = {
+		D1F14AD57A6246DD7D4B7FCA0F16EA06 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8B0A637EC63E0BE83EF1F7E7D55F734A /* MailController.swift */,
-				65B540FF33AD9E44FD24463BCC3359EA /* MailControllerDefaultResultHandler.swift */,
-				52C5D7334325740318F402680FB48E1E /* Pod */,
-				27EE9C673AB81FE9450A4339CA3802AB /* Support Files */,
+				2936EF2692C7E45CFDE5ACBC77892FFD /* MailController */,
 			);
-			name = MailController;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		D1523A676540F28C0ACFBAD703E6FF8C /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BBC5453087D52AD3BF468869AFED243C /* MailController */,
-			);
-			name = "Development Pods";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E0EE8B1FAA04AA22D446E2C9FC5B6395 /* Targets Support Files */ = {
@@ -309,7 +295,7 @@
 /* Begin XCBuildConfiguration section */
 		372F7388F551F53C03C3FA1EC5D1B76F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57AD536B2B677F9577D7D59A270796D4 /* MailController.xcconfig */;
+			baseConfigurationReference = 380D17FE0F90E2E4BBE92219D37FFA39 /* MailController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -426,7 +412,7 @@
 		};
 		80FEABBA9D97001839218814598EEFC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57AD536B2B677F9577D7D59A270796D4 /* MailController.xcconfig */;
+			baseConfigurationReference = 380D17FE0F90E2E4BBE92219D37FFA39 /* MailController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
