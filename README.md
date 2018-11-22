@@ -1,10 +1,5 @@
 # MailController
 
-[![CI Status](https://img.shields.io/travis/Volodymyr Kolibaba/MailController.svg?style=flat)](https://travis-ci.org/Volodymyr Kolibaba/MailController)
-[![Version](https://img.shields.io/cocoapods/v/MailController.svg?style=flat)](https://cocoapods.org/pods/MailController)
-[![License](https://img.shields.io/cocoapods/l/MailController.svg?style=flat)](https://cocoapods.org/pods/MailController)
-[![Platform](https://img.shields.io/cocoapods/p/MailController.svg?style=flat)](https://cocoapods.org/pods/MailController)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -17,7 +12,15 @@ MailController is available through [CocoaPods](https://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'MailController'
+source 'https://github.com/Kulich-ua/PodSpecs.git'
+
+platform :ios, '9.0'
+
+target '<Your Target Name>' do
+
+    pod 'MailController'
+
+end
 ```
 
 ## Author
