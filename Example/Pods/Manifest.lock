@@ -1,5 +1,5 @@
 PODS:
-  - MailController (0.5.0)
+  - MailController (0.5.1)
 
 DEPENDENCIES:
   - MailController (~> 0.5)
@@ -9,7 +9,7 @@ SPEC REPOS:
     - MailController
 
 SPEC CHECKSUMS:
-  MailController: b92f67af9a51e8ecb94f86aea7888b5fe0442df7
+  MailController: e98faf95ecdb8a0f74505514d87ff3e67da2f7d9
 
 PODFILE CHECKSUM: 0815076e975e83a701d8f5babdab0a564d97d6fe
 
