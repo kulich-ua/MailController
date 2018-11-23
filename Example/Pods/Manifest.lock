@@ -1,16 +1,16 @@
 PODS:
-  - MailController (0.1.0)
+  - MailController (0.5.0)
 
 DEPENDENCIES:
-  - MailController (~> 0.1.0)
+  - MailController (~> 0.5)
 
 SPEC REPOS:
-  https://github.com/Kulich-ua/PodSpecs.git:
+  https://github.com/Kulich-ua/KVPodSpecs.git:
     - MailController
 
 SPEC CHECKSUMS:
-  MailController: b121814f82c830a0b03c35ab7fac64ab5a418f98
+  MailController: 7d6f38bd94865434ba5fbc7f43691c4503fe34c9
 
-PODFILE CHECKSUM: d6f0e67b2ade48d96be55ce7ac01acc36d08c271
+PODFILE CHECKSUM: ecd542fc032d2d036e149eb137f82b4f31433db3
 
 COCOAPODS: 1.5.3

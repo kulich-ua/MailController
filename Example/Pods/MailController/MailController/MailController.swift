@@ -30,7 +30,7 @@ public class MailController: NSObject {
         UIApplication.shared.openURL(mailToURL)
     }
 
-    public func mailComposeViewControllerWithCompletion(_ completionHandler: CompletionHandler?) -> MFMailComposeViewController? {
+    public func mailComposeViewController(_ completionHandler: CompletionHandler? = nil) -> MFMailComposeViewController? {
 
         if MFMailComposeViewController.canSendMail() {
 
