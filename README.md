@@ -22,7 +22,7 @@ MailController is available through [CocoaPods](https://cocoapods.org).
 To integrate it into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-source 'https://github.com/Kulich-ua/PodSpecs.git'
+source 'https://github.com/Kulich-ua/KVPodSpecs.git'
 
 platform :ios, '9.0'
 
