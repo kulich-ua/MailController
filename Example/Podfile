@@ -1,7 +1,5 @@
 platform :ios, '9.0'
 
-source 'https://github.com/Kulich-ua/KVPodSpecs.git'
-
 target 'MailControllerExample' do
 
   #pod 'MailController', :path => '../'
