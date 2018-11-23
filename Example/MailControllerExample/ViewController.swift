@@ -19,10 +19,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func mailAction1() {
-
-        let mailComposeViewController = MailController.shared.mailComposeViewControllerWithCompletion(nil)
         
-        if let mailComposeViewController = mailComposeViewController {
+        if let mailComposeViewController = MailController.shared.mailComposeViewController() {
             
             ViewController.pupulate(mailComposeViewController: mailComposeViewController)
             present(mailComposeViewController, animated:true, completion:nil)
@@ -32,9 +30,8 @@ class ViewController: UIViewController {
     @IBAction func mailAction2() {
         
         let defaultResultHandler = MailControllerDefaultResultHandler.mailComposeController
-        let mailComposeViewController = MailController.shared.mailComposeViewControllerWithCompletion(defaultResultHandler)
         
-        if let mailComposeViewController = mailComposeViewController {
+        if let mailComposeViewController = MailController.shared.mailComposeViewController(defaultResultHandler) {
             
             ViewController.pupulate(mailComposeViewController: mailComposeViewController)
             present(mailComposeViewController, animated:true, completion:nil)
@@ -43,7 +40,7 @@ class ViewController: UIViewController {
     
     @IBAction func mailAction3() {
         
-        let mailComposeViewController = MailController.shared.mailComposeViewControllerWithCompletion { (controller, result, error) in
+        let mailComposeViewController = MailController.shared.mailComposeViewController { (controller, result, error) in
             
             controller.dismiss(animated: true, completion: nil)
         }
