@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
                                         <state key="normal" title="Mail 1"/>
                                         <connections>
-                                            <action selector="mailAction1" destination="BYZ-38-t0r" eventType="touchUpInside" id="NJ2-2Q-yWQ"/>
+                                            <action selector="mailAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="NJ2-2Q-yWQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kca-mX-2rU">
