@@ -29,7 +29,7 @@ To integrate it into your Xcode project using CocoaPods, specify it in your `Pod
 platform :ios, '9.0'
 
 target '<Your Target Name>' do
-    pod 'MailController'
+    pod 'MailController', '~> 1.0'
 end
 ```
 
