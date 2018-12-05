@@ -4,6 +4,6 @@ target 'MailControllerExample' do
 
   #pod 'MailController', :path => '../'
   
-  pod 'MailController', '~> 0.5'
+  pod 'MailController', '~> 1.0'
 
 end
