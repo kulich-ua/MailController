@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MailController'
-  s.version          = '0.5.1'
+  s.version          = '1.0.0'
   s.summary          = 'Lightweight Swift wrapper around MFMailComposeViewController'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
 
