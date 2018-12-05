@@ -1,6 +1,0 @@
-module MailController {
-  umbrella header "MailController-umbrella.h"
-
-  export *
-  module * { export * }
-}

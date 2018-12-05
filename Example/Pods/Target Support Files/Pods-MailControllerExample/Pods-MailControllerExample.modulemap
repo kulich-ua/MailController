@@ -1,6 +1,0 @@
-module Pods_MailControllerExample {
-  umbrella header "Pods-MailControllerExample-umbrella.h"
-
-  export *
-  module * { export * }
-}
