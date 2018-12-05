@@ -1,5 +1,9 @@
 # MailController
 
+[![Version](https://img.shields.io/cocoapods/v/MailController.svg?style=flat)](https://cocoapods.org/pods/MailController)
+[![License](https://img.shields.io/cocoapods/l/MailController.svg?style=flat)](https://cocoapods.org/pods/MailController)
+[![Platform](https://img.shields.io/cocoapods/p/MailController.svg?style=flat)](https://cocoapods.org/pods/MailController)
+
 MailController is a lightweight Swift wrapper around MFMailComposeViewController, which provides you with a convenient interface.  
 It eliminates the use of delegation pattern and instead provides a block-based API if necessary.
 
