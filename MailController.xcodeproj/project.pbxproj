@@ -54,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				96143DFC21C2A74E007954EA /* MailController */,
-				96143E0721C2A74F007954EA /* MailControllerTests */,
+				96143E0721C2A74F007954EA /* Tests */,
 				96143DFB21C2A74E007954EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,13 +77,13 @@
 			path = MailController;
 			sourceTree = "<group>";
 		};
-		96143E0721C2A74F007954EA /* MailControllerTests */ = {
+		96143E0721C2A74F007954EA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				96143E0821C2A74F007954EA /* MailControllerTests.swift */,
 				96143E0A21C2A74F007954EA /* Info.plist */,
 			);
-			path = MailControllerTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,7 +393,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UDMNVRN9SE;
-				INFOPLIST_FILE = MailControllerTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,7 +411,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UDMNVRN9SE;
-				INFOPLIST_FILE = MailControllerTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
