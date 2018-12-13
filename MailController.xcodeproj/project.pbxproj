@@ -58,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				96143E1421C2A972007954EA /* Source */,
-				96143DFC21C2A74E007954EA /* MailController */,
+				96143DFC21C2A74E007954EA /* SupportingFiles */,
 				96143E0721C2A74F007954EA /* Tests */,
 				96143DFB21C2A74E007954EA /* Products */,
 			);
@@ -73,13 +73,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		96143DFC21C2A74E007954EA /* MailController */ = {
+		96143DFC21C2A74E007954EA /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				96143DFD21C2A74E007954EA /* MailController.h */,
 				96143DFE21C2A74E007954EA /* Info.plist */,
 			);
-			path = MailController;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		96143E0721C2A74F007954EA /* Tests */ = {
@@ -364,7 +364,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MailController/Info.plist;
+				INFOPLIST_FILE = SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,7 +389,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MailController/Info.plist;
+				INFOPLIST_FILE = SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
