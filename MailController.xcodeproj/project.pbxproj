@@ -10,6 +10,8 @@
 		96143E0421C2A74F007954EA /* MailController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96143DFA21C2A74E007954EA /* MailController.framework */; };
 		96143E0921C2A74F007954EA /* MailControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96143E0821C2A74F007954EA /* MailControllerTests.swift */; };
 		96143E0B21C2A74F007954EA /* MailController.h in Headers */ = {isa = PBXBuildFile; fileRef = 96143DFD21C2A74E007954EA /* MailController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96143E1721C2A972007954EA /* MailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96143E1521C2A972007954EA /* MailController.swift */; };
+		96143E1821C2A972007954EA /* MailControllerDefaultResultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96143E1621C2A972007954EA /* MailControllerDefaultResultHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		96143E0321C2A74F007954EA /* MailControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96143E0821C2A74F007954EA /* MailControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailControllerTests.swift; sourceTree = "<group>"; };
 		96143E0A21C2A74F007954EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96143E1521C2A972007954EA /* MailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailController.swift; sourceTree = "<group>"; };
+		96143E1621C2A972007954EA /* MailControllerDefaultResultHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailControllerDefaultResultHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		96143DF021C2A74E007954EA = {
 			isa = PBXGroup;
 			children = (
+				96143E1421C2A972007954EA /* Source */,
 				96143DFC21C2A74E007954EA /* MailController */,
 				96143E0721C2A74F007954EA /* Tests */,
 				96143DFB21C2A74E007954EA /* Products */,
@@ -84,6 +89,15 @@
 				96143E0A21C2A74F007954EA /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		96143E1421C2A972007954EA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				96143E1521C2A972007954EA /* MailController.swift */,
+				96143E1621C2A972007954EA /* MailControllerDefaultResultHandler.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96143E1821C2A972007954EA /* MailControllerDefaultResultHandler.swift in Sources */,
+				96143E1721C2A972007954EA /* MailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +407,7 @@
 		96143E1221C2A74F007954EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UDMNVRN9SE;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -409,6 +426,7 @@
 		96143E1321C2A74F007954EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UDMNVRN9SE;
 				INFOPLIST_FILE = Tests/Info.plist;
