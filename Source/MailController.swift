@@ -14,7 +14,7 @@ public class MailController: NSObject {
     public typealias CompletionHandler = (_ controller: MFMailComposeViewController, _ result: MFMailComposeResult, _ error: Error?) -> Void
 
     private var completionHandler: CompletionHandler? = nil
-    private var mailComposeViewController: MFMailComposeViewController? = nil
+    private var mailComposeViewController: MailComposeViewController? = nil
     
     // MARK: Public interface
 
@@ -32,13 +32,21 @@ public class MailController: NSObject {
 
     public func mailComposeViewController(_ completionHandler: CompletionHandler? = nil) -> MFMailComposeViewController? {
 
-        if MFMailComposeViewController.canSendMail() {
+        let mailViewController = self.mailComposeViewController(type: MFMailComposeViewController.self, completionHandler: completionHandler)
+        return mailViewController as? MFMailComposeViewController
+    }
+
+    // MARK: Internal logic
+    
+    func mailComposeViewController(type mailComposeViewControllerType: MailComposeViewController.Type, completionHandler: CompletionHandler? = nil) -> MailComposeViewController? {
+        
+        if mailComposeViewControllerType.canSendMail() {
             
             dismissViewController()
             
             self.completionHandler = completionHandler
             
-            let mailComposeViewController = MFMailComposeViewController()
+            var mailComposeViewController = mailComposeViewControllerType.init()
             mailComposeViewController.mailComposeDelegate = self
             
             self.mailComposeViewController = mailComposeViewController
@@ -52,8 +60,6 @@ public class MailController: NSObject {
         
         return nil
     }
-
-    // MARK: Internal logic
 
     private func reset() {
 

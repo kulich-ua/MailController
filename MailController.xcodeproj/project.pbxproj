@@ -12,6 +12,7 @@
 		96143E0B21C2A74F007954EA /* MailController.h in Headers */ = {isa = PBXBuildFile; fileRef = 96143DFD21C2A74E007954EA /* MailController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96143E1721C2A972007954EA /* MailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96143E1521C2A972007954EA /* MailController.swift */; };
 		96143E1821C2A972007954EA /* MailControllerDefaultResultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96143E1621C2A972007954EA /* MailControllerDefaultResultHandler.swift */; };
+		96143E1A21C40D84007954EA /* MailComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96143E1921C40D84007954EA /* MailComposeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		96143E0A21C2A74F007954EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96143E1521C2A972007954EA /* MailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailController.swift; sourceTree = "<group>"; };
 		96143E1621C2A972007954EA /* MailControllerDefaultResultHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailControllerDefaultResultHandler.swift; sourceTree = "<group>"; };
+		96143E1921C40D84007954EA /* MailComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		96143E1421C2A972007954EA /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				96143E1921C40D84007954EA /* MailComposeViewController.swift */,
 				96143E1521C2A972007954EA /* MailController.swift */,
 				96143E1621C2A972007954EA /* MailControllerDefaultResultHandler.swift */,
 			);
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96143E1A21C40D84007954EA /* MailComposeViewController.swift in Sources */,
 				96143E1821C2A972007954EA /* MailControllerDefaultResultHandler.swift in Sources */,
 				96143E1721C2A972007954EA /* MailController.swift in Sources */,
 			);
