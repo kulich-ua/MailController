@@ -9,7 +9,7 @@
 import Foundation
 import MessageUI
 
-protocol MailComposeViewController {
+public protocol MailComposeViewController {
     
     var mailComposeDelegate: MFMailComposeViewControllerDelegate? {get set}
     

@@ -11,7 +11,7 @@ import MessageUI
 
 public class MailController: NSObject {
     
-    public typealias CompletionHandler = (_ controller: MFMailComposeViewController, _ result: MFMailComposeResult, _ error: Error?) -> Void
+    public typealias CompletionHandler = (_ controller: MailComposeViewController, _ result: MFMailComposeResult, _ error: Error?) -> Void
 
     private var completionHandler: CompletionHandler? = nil
     private var mailComposeViewController: MailComposeViewController? = nil
@@ -83,6 +83,12 @@ extension MailController: MFMailComposeViewControllerDelegate {
     @objc (mailComposeController:didFinishWithResult:error:)
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
 
+        let mailComposeViewController = controller as MailComposeViewController
+        mailComposeController(mailComposeViewController, didFinishWith: result, error: error)
+    }
+    
+    func mailComposeController(_ controller: MailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        
         if let completionHandler = self.completionHandler {
             
             completionHandler(controller, result, error)

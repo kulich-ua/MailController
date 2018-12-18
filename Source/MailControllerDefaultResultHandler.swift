@@ -11,7 +11,7 @@ import MessageUI
 
 public class MailControllerDefaultResultHandler {
 
-    public static func mailComposeController(_ controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: Error?) {
+    public static func mailComposeController(_ controller: MailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: Error?) {
 
         switch (result) {
             
