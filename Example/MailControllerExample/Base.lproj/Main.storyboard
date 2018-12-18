@@ -19,25 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="OFg-2F-Xbe">
-                                <rect key="frame" x="167" y="238.5" width="41" height="190"/>
+                                <rect key="frame" x="166.5" y="238.5" width="42" height="190"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4X-XJ-asb">
-                                        <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
                                         <state key="normal" title="Mail 1"/>
                                         <connections>
                                             <action selector="mailAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="NJ2-2Q-yWQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kca-mX-2rU">
-                                        <rect key="frame" x="0.0" y="80" width="41" height="30"/>
+                                        <rect key="frame" x="0.0" y="80" width="42" height="30"/>
                                         <state key="normal" title="Mail 2"/>
                                         <connections>
                                             <action selector="mailAction2" destination="BYZ-38-t0r" eventType="touchUpInside" id="G86-tY-7Ls"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avg-PC-Lbb">
-                                        <rect key="frame" x="0.0" y="160" width="41" height="30"/>
-                                        <state key="normal" title="Mail3"/>
+                                        <rect key="frame" x="0.0" y="160" width="42" height="30"/>
+                                        <state key="normal" title="Mail 3"/>
                                         <connections>
                                             <action selector="mailAction3" destination="BYZ-38-t0r" eventType="touchUpInside" id="zOe-Ez-B9m"/>
                                         </connections>
