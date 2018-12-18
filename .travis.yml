@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: MailController.xcodeproj
+xcode_scheme: MailController
+xcode_destination: platform=iOS Simulator,OS=11.4,name=iPad Pro (9.7-inch)
