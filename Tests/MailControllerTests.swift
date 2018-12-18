@@ -11,10 +11,17 @@ import XCTest
 
 import MessageUI
 
+typealias CompletionHandler = MailController.CompletionHandler
 
-struct MockMailComposeViewController: MailComposeViewController {
 
+class MockMailComposeViewController: MailComposeViewController {
+
+    var dismissCount = 0
+    
     var mailComposeDelegate: MFMailComposeViewControllerDelegate?
+    
+    required init() {
+    }
     
     static func canSendMail() -> Bool {
         
@@ -23,11 +30,12 @@ struct MockMailComposeViewController: MailComposeViewController {
     
     func dismiss(animated flag: Bool, completion: (() -> Void)?) {
         
+        dismissCount += 1
     }
 }
 
 class MailControllerTests: XCTestCase {
-
+    
     func testWithMFMailComposeViewController() {
 
         let mailComposeViewController = MailController.shared.mailComposeViewController()
@@ -36,7 +44,34 @@ class MailControllerTests: XCTestCase {
     
     func testWithMock() {
         
-        let mailComposeViewController = MailController.shared.mailComposeViewController(type: MockMailComposeViewController.self)
-        XCTAssertNotNil(mailComposeViewController)        
+        let firstMockMailComposeViewController = mockMailComposeViewController()
+        XCTAssertEqual(firstMockMailComposeViewController.dismissCount, 0)
+
+        let secondMockMailComposeViewController = mockMailComposeViewController()
+        XCTAssertEqual(secondMockMailComposeViewController.dismissCount, 0)
+        XCTAssertEqual(firstMockMailComposeViewController.dismissCount, 1)
+        
+        XCTAssertTrue(firstMockMailComposeViewController !== secondMockMailComposeViewController)
+    }
+    
+    //MARK: Internal logic
+    
+    func mockMailComposeViewController(_ completionHandler: CompletionHandler? = nil) -> MockMailComposeViewController {
+        
+        let mailComposeViewControllerType = MockMailComposeViewController.self
+        
+        let mailComposeViewController = MailController.shared.mailComposeViewController(type: mailComposeViewControllerType)
+        XCTAssertNotNil(mailComposeViewController)
+        
+        guard let mockMailComposeViewController = mailComposeViewController as? MockMailComposeViewController else {
+            
+            fatalError("mailComposeViewController should of type MockMailComposeViewController!")
+        }
+        
+        XCTAssertTrue(mockMailComposeViewController.mailComposeDelegate === MailController.shared)
+        
+        XCTAssertEqual(mockMailComposeViewController.dismissCount, 0)
+
+        return mockMailComposeViewController
     }
 }
