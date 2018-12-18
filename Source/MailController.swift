@@ -60,14 +60,19 @@ public class MailController: NSObject {
         
         return nil
     }
+}
 
-    private func reset() {
+// MARK: Private logic
+
+private extension MailController {
+    
+    func reset() {
 
         completionHandler = nil
         mailComposeViewController = nil
     }
 
-    private func dismissViewController () {
+    func dismissViewController () {
 
         if let mailComposeViewController = self.mailComposeViewController {
 
