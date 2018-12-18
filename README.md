@@ -1,7 +1,7 @@
 # MailController
 
+[![Build Status](https://travis-ci.org/Kulich-ua/MailController.svg?branch=master)](https://travis-ci.org/Kulich-ua/MailController)
 [![Version](https://img.shields.io/cocoapods/v/MailController.svg?style=flat)](https://cocoapods.org/pods/MailController)
-[![License](https://img.shields.io/cocoapods/l/MailController.svg?style=flat)](https://cocoapods.org/pods/MailController)
 [![Platform](https://img.shields.io/cocoapods/p/MailController.svg?style=flat)](https://cocoapods.org/pods/MailController)
 
 MailController is a lightweight Swift wrapper around MFMailComposeViewController, which provides you with a convenient interface.  
