@@ -8,18 +8,24 @@
 import Foundation
 import MessageUI
 
-
+/// Lightweight Swift wrapper around MFMailComposeViewController
 public class MailController: NSObject {
     
+    /// A closure executed upon user's completion of email composition.
+    /// The closure takes the same arguments as `MFMailComposeViewControllerDelegate`
     public typealias CompletionHandler = (_ controller: MailComposeViewController, _ result: MFMailComposeResult, _ error: Error?) -> Void
 
     private var completionHandler: CompletionHandler? = nil
     private var mailComposeViewController: MailComposeViewController? = nil
     
     // MARK: Public interface
-
+    
+    /// Returns the singleton mail controller instance.
+    ///
+    /// - Returns: The shared `MailController` instance.
     public static let shared = MailController()
 
+    /// Attempts to open the Mail app.
     public static func openMailApp() {
 
         guard let mailToURL = URL(string: "mailto:") else {
@@ -30,6 +36,19 @@ public class MailController: NSObject {
         UIApplication.shared.openURL(mailToURL)
     }
 
+    /// Creates a new instance of `MFMailComposeViewController`
+    ///
+    /// Invoking this method causes the mail controller to create and return a new instance of `MFMailComposeViewController`.
+    /// This new instance is associated with the mail controller directly and will be released upon user's completion of email composition
+    /// or by next call of this method.
+    ///
+    /// - Parameter completionHandler: Closure which is called upon user's completion of email composition.
+    ///
+    ///   `CompletionHandler` provides the same information as `MFMailComposeViewControllerDelegate`.
+    ///   Upon this call, the client should remove the view associated with the controller, typically by dismissing modally.
+    ///   If `nil`, `MFMailComposeViewController` will be dismissed when the user has finished with the interface.
+    ///
+    /// - Returns: A newly created instance of `MFMailComposeViewController`.
     public func mailComposeViewController(_ completionHandler: CompletionHandler? = nil) -> MFMailComposeViewController? {
 
         let mailViewController = self.mailComposeViewController(type: MFMailComposeViewController.self, completionHandler: completionHandler)
@@ -82,6 +101,7 @@ private extension MailController {
     }
 }
 
+/// Mail controller eliminates the use of delegation pattern and instead provides a block-based API if necessary.
 extension MailController: MFMailComposeViewControllerDelegate {
 
     // Workaround for bug: https://bugs.swift.org/browse/SR-7235

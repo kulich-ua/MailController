@@ -9,6 +9,8 @@
 import Foundation
 import MessageUI
 
+/// Protocol used to be able to test mail controller using dependency injection
+/// since MFMailComposeViewController doesn't work in iOS Simulator.
 public protocol MailComposeViewController {
     
     var mailComposeDelegate: MFMailComposeViewControllerDelegate? {get set}
