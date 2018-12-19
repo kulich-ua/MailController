@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         
         if let mailComposeViewController = MailController.shared.mailComposeViewController(defaultResultHandler) {
             
-            ViewController.pupulate(mailComposeViewController: mailComposeViewController)
+            ViewController.populate(mailComposeViewController: mailComposeViewController)
             present(mailComposeViewController, animated:true, completion:nil)
         }
     }
@@ -60,12 +60,12 @@ class ViewController: UIViewController {
         
         if let mailComposeViewController = mailComposeViewController {
             
-            ViewController.pupulate(mailComposeViewController: mailComposeViewController)
+            ViewController.populate(mailComposeViewController: mailComposeViewController)
             present(mailComposeViewController, animated:true, completion:nil)
         }
     }
     
-    class func pupulate(mailComposeViewController: MFMailComposeViewController) {
+    class func populate(mailComposeViewController: MFMailComposeViewController) {
         
         mailComposeViewController.setToRecipients(["email@example.com"])
         mailComposeViewController.setSubject("Test")
