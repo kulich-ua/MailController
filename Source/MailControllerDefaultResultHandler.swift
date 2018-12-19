@@ -9,7 +9,7 @@ import Foundation
 import MessageUI
 
 
-public class MailControllerDefaultResultHandler {
+public struct MailControllerDefaultResultHandler {
 
     public static func mailComposeController(_ controller: MailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: Error?) {
 
