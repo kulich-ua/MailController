@@ -89,10 +89,6 @@ But you can customize this behaviour and also make use of result and error param
 }
 ```
 
-## Author
-
-Volodymyr Kolibaba, kulich.ua@gmail.com
-
 ## License
 
 MailController is available under the MIT license. See the LICENSE file for more info.
